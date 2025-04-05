@@ -1,5 +1,5 @@
 # about
-This is repo with some numerical approximations examples
+This is repo with some numerical approximations examples for project activities of the NRNU MEPHI Student Scientific Society 
 # dependencies
  - git
  - c++ compiler (like gcc or clang)
