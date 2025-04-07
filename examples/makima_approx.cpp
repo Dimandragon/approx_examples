@@ -247,13 +247,6 @@ int main() {
     y_data[i] = std::rand();
     x_data[i] = i;
   }
-  auto avg = 0.0;
-  for (int i = 0; i < y_data.size(); i++) {
-    avg += y_data[i];
-  }
-  for (int i = 0; i < y_data.size(); i++) {
-    y_data[i] /= avg;
-  }
 
   approximator.loadData(x_data, y_data);
 

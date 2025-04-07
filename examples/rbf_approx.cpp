@@ -387,7 +387,7 @@ int main() {
   int N = 102;
   RBFBasedWithNoTrain approximator;
 
-  approximator.lambda_v = 1000.0; //smoothing parameter
+  approximator.lambda_v = 0.1; //smoothing parameter
 
   std::vector<double> data;
 
@@ -396,12 +396,11 @@ int main() {
   }
 
   approximator.loadData(data);
-
   
   approximator.show1d(1, 0, N, true, &data);
   approximator.show1d(0.1, 0, N, true, &data);
 
-  N = 10;
+  N = 20;
 
   std::vector<std::vector<double>> data2d;
   for (int i = 0; i < N; i++) {

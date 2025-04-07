@@ -3,7 +3,6 @@
 #include <complex>
 #include <matplot/matplot.h>
 #include <vector>
-
 #include <iostream>
 
 template <typename T> void vec_sin(std::vector<std::complex<T>> &v) {
@@ -53,7 +52,10 @@ int main() {
   size_t len = 101;
 
   std::vector<std::complex<float>> data(len);
-  vec_sin(data);
+  
+  for (int i = 0; i < len; i++){
+    data[i] = std::complex<float>(std::rand(), 0.0);
+  }
 
   std::vector<std::complex<float>> res = data;
 
